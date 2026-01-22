@@ -1,0 +1,44 @@
+STREAMLIT DEPLOYMENT GUIDE
+===========================
+
+1. Project Structure
+--------------------
+machine_fault_detection/
+│
+├── app.py
+├── fault_detection_model.pkl
+├── scaler.pkl
+├── label_encoder.pkl
+├── requirements.txt
+└── Deployment.txt
+
+
+2. requirements.txt
+-------------------
+streamlit
+numpy
+pandas
+scikit-learn
+joblib
+
+
+3. app.py (Run Command)
+----------------------
+streamlit run app.py
+
+
+4. Streamlit Cloud Deployment Steps
+-----------------------------------
+1. Push project to GitHub
+2. Go to https://streamlit.io/cloud
+3. Click 'New App'
+4. Select repository
+5. Set app file path to app.py
+6. Deploy
+
+
+5. Notes
+--------
+- CSV file is NOT required for deployment
+- Model files must be present
+- Python version: 3.9+ recommended
